@@ -72,10 +72,10 @@ const typography = {
   fontSizeXxs: '14px',
   fontSizeXs: '16px',
   fontSizeSm: '20px',
-  fontSizeMd: '24px',
+  fontSizeMd: '22px',
   fontSizeLg: '32px',
   fontSizeXl: '48px',
-  fontSizeXxl: '60px',
+  fontSizeXxl: '52px',
 };
 
 export const token = {

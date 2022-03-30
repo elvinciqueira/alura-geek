@@ -21,6 +21,8 @@ const ButtonBase = css`
   cursor: pointer;
   background-color: ${({ theme }) => theme.colors.primaryColor};
   border: 0;
+  font-size: ${({ theme }) => theme.typography.fontSizeXs};
+  line-height: 19px;
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
@@ -31,8 +33,8 @@ const ButtonBase = css`
 const SecondaryButton = css`
   color: ${({ theme }) => theme.colors.primaryColor};
   background-color: ${({ theme }) => theme.colors.neutralWhite};
-  border: ${({ theme }) => theme.border.borderWidthHairline} solid
-    ${({ theme }) => theme.colors.primaryColor};
+  border: ${({ theme }) =>
+    `${theme.border.borderWidthHairline} solid ${theme.colors.primaryColor}`}}
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.accentSecondaryColor};
