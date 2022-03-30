@@ -7,6 +7,8 @@ import {
   border,
   position,
   color,
+  grid,
+  GridProps,
   SpaceProps,
   ColorProps,
   LayoutProps,
@@ -20,6 +22,7 @@ export type BoxProps = SpaceProps &
   LayoutProps &
   FlexboxProps &
   BorderProps &
+  GridProps &
   PositionProps;
 
 export const Box = styled.div<BoxProps>(
@@ -27,5 +30,5 @@ export const Box = styled.div<BoxProps>(
     boxSizing: 'border-box',
     minWidth: 0,
   },
-  compose(space, color, layout, flexbox, border, position),
+  compose(space, grid, color, layout, flexbox, border, position),
 );
