@@ -1,32 +1,20 @@
 import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { ProductList } from './ProductList';
-
-const data = [
-  {
-    id: 1,
-    name: 'Mocha',
-    price: 'R$ 60,00',
-    imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/',
-  },
-  {
-    id: 2,
-    name: 'Latte',
-    price: 'R$ 60,00',
-    imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/',
-  },
-  {
-    id: 3,
-    name: 'Vanilla Latte',
-    price: 'R$ 60,00',
-    imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/',
-  },
-];
+import { ProductListItem } from './ProductListItem';
 
 export default {
-  title: 'cards/ProductList',
-  component: ProductList,
-};
+  title: 'cards/ProductListItem',
+  component: ProductListItem,
+} as ComponentMeta<typeof ProductListItem>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-export const Standard = () => <ProductList data={data} />;
+const Template: ComponentStory<typeof ProductListItem> = (args) => (
+  <ProductListItem {...args} />
+);
+
+export const Default = Template.bind({});
+Default.args = {
+  title: 'Produto XYZ',
+  price: 'R$ 60,00',
+  imageSource: 'images/star-wars.png',
+};
