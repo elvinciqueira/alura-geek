@@ -1,3 +1,5 @@
+import UIThemeProvider from '../src/theme/UIThemeProvider';
+
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   layout: 'centered',
@@ -8,3 +10,11 @@ export const parameters = {
     },
   },
 };
+
+export const decorators = [
+  (Story) => (
+    <UIThemeProvider>
+      <Story />
+    </UIThemeProvider>
+  ),
+];
