@@ -1,27 +1,21 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Button } from './Button';
+import { Search } from './Search';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Actions/Button',
-  component: Button,
+  title: 'Fields & Forms/Search',
+  component: Search,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof Search>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Search> = (args) => <Search {...args} />;
 
-export const Primary = Template.bind({});
+export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  variant: 'primary',
-  children: 'Texto',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  variant: 'secondary',
-  children: 'Texto',
+Default.args = {
+  name: 'search',
+  placeholder: 'O que deseja encontrar?',
 };

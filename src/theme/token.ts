@@ -6,6 +6,8 @@ const colors = {
   accentSecondaryColor: '#D4E4FA',
   textColor: '#464646',
   neutralWhite: '#FFFF',
+  neutralGray: '#F5F5F5',
+  neutralGray500: '#A2A2A2',
 };
 
 const shadows = {
@@ -19,7 +21,7 @@ const borderRadius = {
   borderRadiusNone: '0px',
   borderRadiusSm: '8px',
   borderRadiusMd: '16px',
-  borderRadiusLg: '24px',
+  borderRadiusLg: '20px',
   borderRadiusPill: '500px',
   borderRadiusCircular: '50%',
 };

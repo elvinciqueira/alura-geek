@@ -27,6 +27,15 @@ const textBodyRegular = css`
   `}
 `;
 
+const textCaptionSmall = css`
+  ${({ theme }) => css`
+    font-family: ${theme.typography.fontFamily};
+    font-size: ${theme.typography.fontSizeXxs};
+    font-weight: ${theme.typography.fontWeightRegular};
+    line-height: 16px;
+  `};
+`;
+
 const textCaptionBold = css`
   ${({ theme }) => css`
     font-family: ${theme.typography.fontFamily};
@@ -61,4 +70,5 @@ export const TextStyleVariants = {
   textBodySmall,
   textCaptionBold,
   textBodyRegular,
+  textCaptionSmall,
 };
