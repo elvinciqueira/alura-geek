@@ -21,7 +21,7 @@ const InputWrapperStyled = styled(InputWrapper)`
   border-radius: ${({ theme }) => theme.borderRadius.borderRadiusLg};
   color: ${({ theme }) => theme.colors.neutralGray500};
   padding: ${({ theme }) =>
-    `${theme.spacing.spacingInsetSizeNanoV} ${theme.spacing.spacingInsetSizeXsH}`};
+    `${theme.space.spacingInsetSizeNanoV} ${theme.space.spacingInsetSizeXsH}`};
 
   input {
     ${TextStyleVariants['textCaptionSmall']};

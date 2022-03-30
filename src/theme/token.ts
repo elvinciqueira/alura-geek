@@ -26,7 +26,7 @@ const borderRadius = {
   borderRadiusCircular: '50%',
 };
 
-const border = {
+const borderWidths = {
   borderWidthNone: '0px',
   borderWidthHairline: '1px',
   borderWidthThin: '2px',
@@ -34,7 +34,7 @@ const border = {
   borderWidthHeavy: '8px',
 };
 
-const spacing = {
+const space = {
   spacingSizeQuarck: '4px',
   spacingSizeNano: '8px',
   spacingSizeXxxs: '16px',
@@ -59,17 +59,18 @@ const spacing = {
   spacingInsetSizeSmStack: '24px 24px',
 };
 
-const typography = {
+const fonts = {
   fontFamily: 'Raleway, --apple-system, sans-serif',
   raleway: 'Raleway',
+};
+
+const fontWeights = {
   fontWeightBold: '700',
   fontWeightMedium: '500',
   fontWeightRegular: '400',
-  lineHeightXs: '106%',
-  lineHeightSm: '126%',
-  lineHeightMd: '134%',
-  lineHeightLg: '146%',
-  lineHeightXl: '152%',
+};
+
+const fontSizes = {
   fontSizeXxxs: '12px',
   fontSizeXxs: '14px',
   fontSizeXs: '16px',
@@ -82,9 +83,11 @@ const typography = {
 
 export const token = {
   colors,
-  typography,
+  fontSizes,
+  fontWeights,
+  fonts,
   borderRadius,
-  border,
-  spacing,
+  borderWidths,
+  space,
   shadows,
 };

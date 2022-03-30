@@ -37,7 +37,7 @@ const Container = styled.div`
 
 const ChildrenWrapper = styled.div`
   display: flex;
-  gap: ${({ theme }) => theme.spacing.spacingInsetSizeXsH};
+  gap: ${({ theme }) => theme.space.spacingInsetSizeXsH};
   height: 100%;
   position: relative;
   width: 100%;
