@@ -25,5 +25,6 @@ const InputWrapperStyled = styled(InputWrapper)`
 
   input {
     ${TextStyleVariants['textCaptionSmall']};
+    width: 100%;
   }
 `;
