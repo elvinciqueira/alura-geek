@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Logo } from '../../theme/icons/Logo';
 import { Search, Button } from '../';
 
-export const Header: React.FC = () => {
+export const Header = () => {
   return (
     <HeaderWrapper>
       <HeaderContainer>

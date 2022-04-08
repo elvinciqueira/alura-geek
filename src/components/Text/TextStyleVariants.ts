@@ -4,7 +4,7 @@ const title = css`
   ${({ theme }) => css`
     font-family: ${theme.fonts.fontFamily};
     font-size: ${theme.fontSizes.fontSizeXxl};
-    font-weight: ${theme.fontWheights.fontWeightBold};
+    font-weight: ${theme.fontWeights.fontWeightBold};
     line-height: 61px;
   `}
 `;

@@ -65,9 +65,9 @@ const fonts = {
 };
 
 const fontWeights = {
-  fontWeightBold: '700',
-  fontWeightMedium: '500',
-  fontWeightRegular: '400',
+  fontWeightBold: 700,
+  fontWeightMedium: 500,
+  fontWeightRegular: 400,
 };
 
 const fontSizes = {
