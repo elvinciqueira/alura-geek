@@ -28,7 +28,6 @@ const HeaderContainer = styled.div`
   display: flex;
   flex: 1;
   justify-content: space-between;
-  max-width: 1136px;
   margin: 0 auto;
 `;
 

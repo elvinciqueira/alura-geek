@@ -12,17 +12,25 @@ export const InputText = ({
   name,
   label,
   className,
+  placeholder,
   ...props
 }: InputTextProps) => (
   <Container className={className}>
     <Label htmlFor={name}>{label}</Label>
-    <InputTextBase name={name} aria-label={label} {...props} />
+    <InputTextBase
+      name={name}
+      aria-label={label || placeholder}
+      placeholder={placeholder}
+      {...props}
+    />
   </Container>
 );
 
 const Container = styled.div`
+  background-color: ${({ theme }) => theme.colors.neutralWhite};
   border-radius: ${({ theme }) => theme.borderRadius.borderRadiusXs};
   border-bottom: 1px solid #c8c8c8;
+  margin-top: ${({ theme }) => theme.space.spacingSizeXxxs};
   display: flex;
   flex-direction: column;
   padding: ${({ theme }) => theme.space.spacingInsetSizeNanoStack};

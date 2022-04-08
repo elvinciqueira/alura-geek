@@ -19,6 +19,7 @@ const shadows = {
 
 const borderRadius = {
   borderRadiusNone: '0px',
+  borderRadiusXs: '4px',
   borderRadiusSm: '8px',
   borderRadiusMd: '16px',
   borderRadiusLg: '20px',

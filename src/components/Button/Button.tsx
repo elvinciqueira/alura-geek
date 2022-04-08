@@ -1,12 +1,14 @@
 import { ButtonHTMLAttributes } from 'react';
 import styled, { css } from 'styled-components';
+import { space, SpaceProps } from 'styled-system';
 
 export type ButtonProps = {
   variant?: 'primary' | 'secondary';
   size?: 'sm' | 'md';
   isFullWidth?: boolean;
   onClick?: () => void;
-} & ButtonHTMLAttributes<HTMLButtonElement>;
+} & ButtonHTMLAttributes<HTMLButtonElement> &
+  SpaceProps;
 
 const md = css`
   padding: ${({ theme }) => theme.space.spacingInsetSizeXsStack};
@@ -48,7 +50,7 @@ const fullWidth = css`
 export const Button = styled.button<ButtonProps>`
   ${ButtonBase}
   ${md}
-
+  ${space}
   ${({ variant }) => variant === 'secondary' && SecondaryButton}
   ${({ size }) => size === 'sm' && sm}
   ${({ isFullWidth }) => isFullWidth && fullWidth}

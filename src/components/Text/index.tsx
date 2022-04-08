@@ -1,3 +1,3 @@
-import Text from './Text';
+import Text, { TextStyleVariants } from './Text';
 
-export { Text };
+export { Text, TextStyleVariants };

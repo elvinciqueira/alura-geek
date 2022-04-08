@@ -1,9 +1,23 @@
 import { forwardRef, Ref } from 'react';
 import styled, { css } from 'styled-components';
+import { typography, TypographyProps } from 'styled-system';
 import { TextStyleVariants } from './TextStyleVariants';
 
+export { TextStyleVariants };
+
 type TextBaseProps = {
-  tag?: 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'input';
+  tag?:
+    | 'p'
+    | 'span'
+    | 'h1'
+    | 'h2'
+    | 'h3'
+    | 'h4'
+    | 'h5'
+    | 'h6'
+    | 'input'
+    | 'li'
+    | 'label';
   color?: string;
   variant?:
     | 'title'
@@ -14,7 +28,7 @@ type TextBaseProps = {
     | 'titleXS'
     | 'textBodySmall';
   children: React.ReactNode;
-};
+} & TypographyProps;
 
 const Text = (
   {
@@ -38,6 +52,7 @@ const TextBase = styled.span<TextBaseProps>`
     css`
       color: ${theme.colors[color]};
     `};
+  ${typography};
 `;
 
 export default forwardRef<any, TextBaseProps>(Text);

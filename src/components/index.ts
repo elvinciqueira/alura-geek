@@ -4,3 +4,7 @@ export * from './Search';
 export * from './Box';
 export * from './Flex';
 export * from './Card';
+export * from './InputText';
+export * from './TextArea';
+export * from './Footer';
+export * from './Banner';

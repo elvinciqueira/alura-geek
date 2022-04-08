@@ -3,15 +3,19 @@ import { InputHTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { Text } from '../Text';
 
-export type InputProps = InputHTMLAttributes<HTMLInputElement>;
+export type InputProps = {
+  tag?: 'input' | 'textarea';
+} & InputHTMLAttributes<HTMLInputElement>;
 
-const InputBase = (props: InputProps, ref: Ref<HTMLInputElement | any>) => (
-  <StyledInput as={'input'} ref={ref} {...props} />
-);
+const InputBase = (
+  { tag = 'input', ...props }: InputProps,
+  ref: Ref<HTMLInputElement | any>,
+) => <InputElement as={tag} ref={ref} {...props} />;
 
-const StyledInput = styled(Text)`
+const InputElement = styled(Text)`
   background-color: transparent;
   border: 0;
+  outline: 0;
 `;
 
 export default forwardRef<HTMLInputElement | any, InputProps>(InputBase);
